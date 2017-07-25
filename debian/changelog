@@ -1,4 +1,4 @@
-redis3m (2.0.0-1) unstable; urgency=low
+libredis3m (2.0.0-1) unstable; urgency=low
 
   * Initial build
 

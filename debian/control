@@ -1,4 +1,4 @@
-Source: redis3m
+Source: libredis3m
 Priority: extra
 Maintainer: Nick Altmann <nick.altmann@gmail.com>
 Build-Depends: debhelper (>= 8.0.0), cmake, libmsgpack-dev, libboost-thread-dev, libboost-date-time-dev, libboost-test-dev, libboost-filesystem-dev, libboost-system-dev, libhiredis-dev
@@ -6,15 +6,15 @@ Standards-Version: 3.9.2
 Section: libs
 Homepage: https://github.com/luca3m/redis3m
 
-Package: redis3m-dev
+Package: libredis3m-dev
 Section: libdevel
 Architecture: any
-Depends: redis3m (= ${binary:Version}), libhiredis-dev
+Depends: libredis3m (= ${binary:Version}), libhiredis-dev
 Description: A C++ Redis client
  A C++ Redis client, born to bring my experience using Redis
  and C++ on a opensource library.
 
-Package: redis3m
+Package: libredis3m
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
