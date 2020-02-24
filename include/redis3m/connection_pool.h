@@ -3,6 +3,7 @@
 
 #pragma once
 
+#include <functional>
 #include <string>
 #include <set>
 #include <redis3m/connection.h>
@@ -118,8 +119,8 @@ namespace redis3m {
         std::set<connection::ptr_t> connections;
 
         std::vector<std::string> sentinel_hosts;
-        unsigned int sentinel_port;
         std::string master_name;
+        unsigned int sentinel_port;
         std::string password;
         unsigned int _database;
     };
